@@ -3,7 +3,7 @@ Always thought there wasn't enough packed block ? No ? ah... well... here it is 
 
 "Pack Me Up !" is an addon from the mod "Better Than Wolves" 3.0CE
 
-# Changes
+# Additions
 
 -12 new packed blocks (nitre, potato, carrot, red and brown mushroom, slime, bat wings, witch wart, soul flux, brimstone, apple, venom sac)
 
