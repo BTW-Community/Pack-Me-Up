@@ -1,0 +1,302 @@
+tile.netherrack.0.name=Double Compressed Netherrack
+tile.netherrack.1.name=Triple Compressed Netherrack
+tile.netherrack.2.name=Quadruple Compressed Netherrack
+tile.netherrack.3.name=Quintuple Compressed Netherrack
+tile.netherrack.4.name=Sextuple Compressed Netherrack
+
+tile.clay.0.name=Double Compressed Block of Clay
+tile.clay.1.name=Triple Compressed Block of Clay
+tile.clay.2.name=Quadruple Compressed Block of Clay
+tile.clay.3.name=Quintuple Compressed Block of Clay
+tile.clay.4.name=Sextuple Compressed Block of Clay
+
+tile.ender.0.name=Double Compressed Ender Block
+tile.ender.1.name=Triple Compressed Ender Block
+tile.ender.2.name=Quadruple Compressed Ender Block
+tile.ender.3.name=Quintuple Compressed Ender Block
+tile.ender.4.name=Sextuple Compressed Ender Block
+
+tile.dung.0.name=Double Compressed Block of Dung
+tile.dung.1.name=Triple Compressed Block of Dung
+tile.dung.2.name=Quadruple Compressed Block of Dung
+tile.dung.3.name=Quintuple Compressed Block of Dung
+tile.dung.4.name=Sextuple Compressed Block of Dung
+
+tile.flint.0.name=Double Compressed Block of Flint
+tile.flint.1.name=Triple Compressed Block of Flint
+tile.flint.2.name=Quadruple Compressed Block of Flint
+tile.flint.3.name=Quintuple Compressed Block of Flint
+tile.flint.4.name=Sextuple Compressed Block of Flint
+
+tile.whitestone.0.name=Double Compressed Whitestone
+tile.whitestone.1.name=Triple Compressed Whitestone
+tile.whitestone.2.name=Quadruple Compressed Whitestone
+tile.whitestone.3.name=Quintuple Compressed Whitestone
+tile.whitestone.4.name=Sextuple Compressed Whitestone
+
+tile.whitecobble.0.name=Double Compressed White Cobblestone
+tile.whitecobble.1.name=Triple Compressed White Cobblestone
+tile.whitecobble.2.name=Quadruple Compressed White Cobblestone
+tile.whitecobble.3.name=Quintuple Compressed White Cobblestone
+tile.whitecobble.4.name=Sextuple Compressed White Cobblestone
+
+tile.dirt.0.name=Double Compressed Dirt
+tile.dirt.1.name=Triple Compressed Dirt
+tile.dirt.2.name=Quadruple Compressed Dirt
+tile.dirt.3.name=Quintuple Compressed Dirt
+tile.dirt.4.name=Sextuple Compressed Dirt
+
+tile.packed_dirt.0.name=Double Compressed Packed Earth
+tile.packed_dirt.1.name=Triple Compressed Packed Earth
+tile.packed_dirt.2.name=Quadruple Compressed Packed Earth
+tile.packed_dirt.3.name=Quintuple Compressed Packed Earth
+tile.packed_dirt.4.name=Sextuple Compressed Packed Earth
+
+tile.spider.0.name=Double Compressed Block of Spider Eyes
+tile.spider.1.name=Triple Compressed Block of Spider Eyes
+tile.spider.2.name=Quadruple Compressed Block of Spider Eyes
+tile.spider.3.name=Quintuple Compressed Block of Spider Eyes
+tile.spider.4.name=Sextuple Compressed Block of Spider Eyes
+
+tile.bone.0.name=Double Compressed Block of Bone
+tile.bone.1.name=Triple Compressed Block of Bone
+tile.bone.2.name=Quadruple Compressed Block of Bone
+tile.bone.3.name=Quintuple Compressed Block of Bone
+tile.bone.4.name=Sextuple Compressed Block of Bone
+
+tile.flesh.0.name=Double Compressed Block of Flesh
+tile.flesh.1.name=Triple Compressed Block of Flesh
+tile.flesh.2.name=Quadruple Compressed Block of Flesh
+tile.flesh.3.name=Quintuple Compressed Block of Flesh
+tile.flesh.4.name=Sextuple Compressed Block of Flesh
+
+tile.stone2.0.name=Double Compressed Deepslate
+tile.stone2.1.name=Triple Compressed Deepslate
+tile.stone2.2.name=Quadruple Compressed Deepslate
+tile.stone2.3.name=Quintuple Compressed Deepslate
+tile.stone2.4.name=Sextuple Compressed Deepslate
+
+tile.stone3.0.name=Double Compressed Blackstone
+tile.stone3.1.name=Triple Compressed Blackstone
+tile.stone3.2.name=Quadruple Compressed Blackstone
+tile.stone3.3.name=Quintuple Compressed Blackstone
+tile.stone3.4.name=Sextuple Compressed Blackstone
+
+tile.loosecobble1.0.name=Double Compressed Loose Cobblestone
+tile.loosecobble1.1.name=Triple Compressed Loose Cobblestone
+tile.loosecobble1.2.name=Quadruple Compressed Loose Cobblestone
+tile.loosecobble1.3.name=Quintuple Compressed Loose Cobblestone
+tile.loosecobble1.4.name=Sextuple Compressed Loose Cobblestone
+
+tile.loosecobble2.0.name=Double Compressed Loose Cobbled Deepslate
+tile.loosecobble2.1.name=Triple Compressed Loose Cobbled Deepslate
+tile.loosecobble2.2.name=Quadruple Compressed Loose Cobbled Deepslate
+tile.loosecobble2.3.name=Quintuple Compressed Loose Cobbled Deepslate
+tile.loosecobble2.4.name=Sextuple Compressed Loose Cobbled Deepslate
+
+tile.loosecobble3.0.name=Double Compressed Loose Cobbled Blackstone
+tile.loosecobble3.1.name=Triple Compressed Loose Cobbled Blackstone
+tile.loosecobble3.2.name=Quadruple Compressed Loose Cobbled Blackstone
+tile.loosecobble3.3.name=Quintuple Compressed Loose Cobbled Blackstone
+tile.loosecobble3.4.name=Sextuple Compressed Loose Cobbled Blackstone
+
+tile.soap.0.name=Double Compressed Block of Soap
+tile.soap.1.name=Triple Compressed Block of Soap
+tile.soap.2.name=Quadruple Compressed Block of Soap
+tile.soap.3.name=Quintuple Compressed Block of Soap
+tile.soap.4.name=Sextuple Compressed Block of Soap
+
+tile.sand.0.name=Double Compressed Sand
+tile.sand.1.name=Triple Compressed Sand
+tile.sand.2.name=Quadruple Compressed Sand
+tile.sand.3.name=Quintuple Compressed Sand
+tile.sand.4.name=Sextuple Compressed Sand
+
+tile.melon.0.name=Double Compressed Melon
+tile.melon.1.name=Triple Compressed Melon
+tile.melon.2.name=Quadruple Compressed Melon
+tile.melon.3.name=Quintuple Compressed Melon
+tile.melon.4.name=Sextuple Compressed Melon
+
+tile.sandstone_normal.0.name=Double Compressed Sandstone
+tile.sandstone_normal.1.name=Triple Compressed Sandstone
+tile.sandstone_normal.2.name=Quadruple Compressed Sandstone
+tile.sandstone_normal.3.name=Quintuple Compressed Sandstone
+tile.sandstone_normal.4.name=Sextuple Compressed Sandstone
+
+tile.sandstone_smooth.0.name=Double Compressed Smooth Sandstone
+tile.sandstone_smooth.1.name=Triple Compressed Smooth Sandstone
+tile.sandstone_smooth.2.name=Quadruple Compressed Smooth Sandstone
+tile.sandstone_smooth.3.name=Quintuple Compressed Smooth Sandstone
+tile.sandstone_smooth.4.name=Sextuple Compressed Smooth Sandstone
+
+tile.sandstone_carved.0.name=Double Compressed Chiseled Sandstone
+tile.sandstone_carved.1.name=Triple Compressed Chiseled Sandstone
+tile.sandstone_carved.2.name=Quadruple Compressed Chiseled Sandstone
+tile.sandstone_carved.3.name=Quintuple Compressed Chiseled Sandstone
+tile.sandstone_carved.4.name=Sextuple Compressed Chiseled Sandstone
+
+tile.oyster.0.name=Double Compressed Block of Oysters
+tile.oyster.1.name=Triple Compressed Block of Oysters
+tile.oyster.2.name=Quadruple Compressed Block of Oysters
+tile.oyster.3.name=Quintuple Compressed Block of Oysters
+tile.oyster.4.name=Sextuple Compressed Block of Oysters
+
+tile.gravel.0.name=Double Compressed Gravel
+tile.gravel.1.name=Triple Compressed Gravel
+tile.gravel.2.name=Quadruple Compressed Gravel
+tile.gravel.3.name=Quintuple Compressed Gravel
+tile.gravel.4.name=Sextuple Compressed Gravel
+
+tile.pumpkin.0.name=Double Compressed Pumpkin
+tile.pumpkin.1.name=Triple Compressed Pumpkin
+tile.pumpkin.2.name=Quadruple Compressed Pumpkin
+tile.pumpkin.3.name=Quintuple Compressed Pumpkin
+tile.pumpkin.4.name=Sextuple Compressed Pumpkin
+
+tile.apple.0.name=Double Compressed Block of Apple
+tile.apple.1.name=Triple Compressed Block of Apple
+tile.apple.2.name=Quadruple Compressed Block of Apple
+tile.apple.3.name=Quintuple Compressed Block of Apple
+tile.apple.4.name=Sextuple Compressed Block of Apple
+
+tile.carrot.0.name=Double Compressed Block of Carrot
+tile.carrot.1.name=Triple Compressed Block of Carrot
+tile.carrot.2.name=Quadruple Compressed Block of Carrot
+tile.carrot.3.name=Quintuple Compressed Block of Carrot
+tile.carrot.4.name=Sextuple Compressed Block of Carrot
+
+tile.potato.0.name=Double Compressed Block of Potato
+tile.potato.1.name=Triple Compressed Block of Potato
+tile.potato.2.name=Quadruple Compressed Block of Potato
+tile.potato.3.name=Quintuple Compressed Block of Potato
+tile.potato.4.name=Sextuple Compressed Block of Potato
+
+tile.bshroom.0.name=Double Compressed Block of Brown Mushroom
+tile.bshroom.1.name=Triple Compressed Block of Brown Mushroom
+tile.bshroom.2.name=Quadruple Compressed Block of Brown Mushroom
+tile.bshroom.3.name=Quintuple Compressed Block of Brown Mushroom
+tile.bshroom.4.name=Sextuple Compressed Block of Brown Mushroom
+
+tile.rshroom.0.name=Double Compressed Block of Red Mushroom
+tile.rshroom.1.name=Triple Compressed Block of Red Mushroom
+tile.rshroom.2.name=Quadruple Compressed Block of Red Mushroom
+tile.rshroom.3.name=Quintuple Compressed Block of Red Mushroom
+tile.rshroom.4.name=Sextuple Compressed Block of Red Mushroom
+
+tile.hay.0.name=Double Compressed Hay Bale
+tile.hay.1.name=Triple Compressed Hay Bale
+tile.hay.2.name=Quadruple Compressed Hay Bale
+tile.hay.3.name=Quintuple Compressed Hay Bale
+tile.hay.4.name=Sextuple Compressed Hay Bale
+
+tile.venom.0.name=Double Compressed Block of Venom Sac
+tile.venom.1.name=Triple Compressed Block of Venom Sac
+tile.venom.2.name=Quadruple Compressed Block of Venom Sac
+tile.venom.3.name=Quintuple Compressed Block of Venom Sac
+tile.venom.4.name=Sextuple Compressed Block of Venom Sac
+
+tile.bat.0.name=Double Compressed Block of Bat Wing
+tile.bat.1.name=Triple Compressed Block of Bat Wing
+tile.bat.2.name=Quadruple Compressed Block of Bat Wing
+tile.bat.3.name=Quintuple Compressed Block of Bat Wing
+tile.bat.4.name=Sextuple Compressed Block of Bat Wing
+
+tile.nitre.0.name=Double Compressed Nitre Block
+tile.nitre.1.name=Triple Compressed Nitre Block
+tile.nitre.2.name=Quadruple Compressed Nitre Block
+tile.nitre.3.name=Quintuple Compressed Nitre Block
+tile.nitre.4.name=Sextuple Compressed Nitre Block
+
+tile.wart.0.name=Double Compressed Block of Witch Wart
+tile.wart.1.name=Triple Compressed Block of Witch Wart
+tile.wart.2.name=Quadruple Compressed Block of Witch Wart
+tile.wart.3.name=Quintuple Compressed Block of Witch Wart
+tile.wart.4.name=Sextuple Compressed Block of Witch Wart
+
+tile.brimstone.0.name=Double Compressed Brimstone Block
+tile.brimstone.1.name=Triple Compressed Brimstone Block
+tile.brimstone.2.name=Quadruple Compressed Brimstone Block
+tile.brimstone.3.name=Quintuple Compressed Brimstone Block
+tile.brimstone.4.name=Sextuple Compressed Brimstone Block
+
+tile.flux.0.name=Double Compressed Soul Flux Block
+tile.flux.1.name=Triple Compressed Soul Flux Block
+tile.flux.2.name=Quadruple Compressed Soul Flux Block
+tile.flux.3.name=Quintuple Compressed Soul Flux Block
+tile.flux.4.name=Sextuple Compressed Soul Flux Block
+
+tile.stone1.0.name=Double Compressed Stone
+tile.stone1.1.name=Triple Compressed Stone
+tile.stone1.2.name=Quadruple Compressed Stone
+tile.stone1.3.name=Quintuple Compressed Stone
+tile.stone1.4.name=Sextuple Compressed Stone
+
+tile.slime.0.name=Double Compressed Slime Block
+tile.slime.1.name=Triple Compressed Slime Block
+tile.slime.2.name=Quadruple Compressed Slime Block
+tile.slime.3.name=Quintuple Compressed Slime Block
+tile.slime.4.name=Sextuple Compressed Slime Block
+
+
+tile.CustomPackedBlocks.0.name=Block of Apple
+tile.CustomPackedBlocks.1.name=Block of Carrot
+tile.CustomPackedBlocks.2.name=Block of Potato
+tile.CustomPackedBlocks.3.name=Block of Brown Mushroom
+tile.CustomPackedBlocks.4.name=Block of Red Mushroom
+tile.CustomPackedBlocks.5.name=Block of Venom Sac
+tile.CustomPackedBlocks.6.name=Block of Bat Wing
+tile.CustomPackedBlocks.7.name=Nitre Block
+tile.CustomPackedBlocks.8.name=Block of Witch Wart
+tile.CustomPackedBlocks.9.name=Brimstone Block
+tile.CustomPackedBlocks.10.name=Soul Flux Block
+tile.CustomPackedBlocks.11.name=Slime Block
+
+
+
+
+
+tag.wildcard.Double Compressed Netherrack.1700=Compressed Netherrack
+tag.wildcard.Double Compressed Block of Clay.1701=Compressed Clay of Block
+tag.wildcard.Double Compressed Ender Block.1702=Compressed Ender Block
+tag.wildcard.Double Compressed Block of Dung.1703=Compressed Block of Dung
+tag.wildcard.Double Compressed Block of Flint.1704=Compressed Block of Flint
+tag.wildcard.Double Compressed Whitestone.1705=Compressed Whitestone
+tag.wildcard.Double Compressed White Cobblestone.1706=Compressed White Cobblestone
+tag.wildcard.Double Compressed Dirt.1707=Compressed Dirt
+tag.wildcard.Double Compressed Packed Earth.1708=Compressed Packed Earth
+tag.wildcard.Double Compressed Block of Spider Eyes.1709=Compressed Block of Spider Eyes
+tag.wildcard.Double Compressed Block of Bone.1710=Compressed Block of Bone
+tag.wildcard.Double Compressed Block of Flesh.1711=Compressed Block of Flesh
+tag.wildcard.Double Compressed Deepslate.1712=Compressed Deepslate
+tag.wildcard.Double Compressed Blackstone.1713=Compressed Blackstone
+tag.wildcard.Double Compressed Loose Cobblestone.1714=Compressed Loose Cobblestone
+tag.wildcard.Double Compressed Loose Cobbled Deepslate.1715=Compressed Loose Cobbled Deepslate
+tag.wildcard.Double Compressed Loose Cobbled Blackstone.1716=Compressed Loose Cobbled Blackstone
+tag.wildcard.Double Compressed Block of Soap.1717=Compressed Block of Soap
+tag.wildcard.Double Compressed Sand.1718=Compressed Sand
+tag.wildcard.Double Compressed Block of Oysters.1719=Compressed Block of Oysters
+tag.wildcard.Double Compressed Gravel.1720=Compressed Gravel
+tag.wildcard.Double Compressed Block of Apple.1721=Compressed Block of Apple
+tag.wildcard.Double Compressed Block of Potato.1723=Compressed Block of Potato
+tag.wildcard.Double Compressed Block of Carrot.1722=Compressed Block of Carrot
+tag.wildcard.Double Compressed Block of Brown Mushroom.1724=Compressed Block of Brown Mushroom
+tag.wildcard.Double Compressed Block of Red Mushroom.1725=Compressed Block of Red Mushroom
+tag.wildcard.Double Compressed Melon.1726=Compressed Melon
+tag.wildcard.Double Compressed Sandstone.1727=Compressed Sandstone
+tag.wildcard.Double Compressed Smooth Sandstone.1728=Compressed Smooth Sandstone
+tag.wildcard.Double Compressed Chiseled Sandstone.1729=Compressed Chiseled Sandstone
+tag.wildcard.Double Compressed Pumpkin.1730=Compressed Pumpkin
+tag.wildcard.Double Compressed Hay Bale.1731=Compressed Hay Bale
+tag.wildcard.Double Compressed Block of Venom Sac.1732=Compressed Block of Venom Sac
+tag.wildcard.Double Compressed Block of Bat Wing.1733=Compressed Block of Bat Wing
+tag.wildcard.Double Compressed Nitre Block.1734=Compressed Nitre Block
+tag.wildcard.Double Compressed Block of Witch Wart.1735=Compressed Block of Witch Wart
+tag.wildcard.Double Compressed Brimstone Block.1736=Compressed Brimstone Block
+tag.wildcard.Double Compressed Soul Flux Block.1737=Compressed Soul Flux Block
+tag.wildcard.Double Compressed Slime Block.1738=Compressed Slime Block
+tag.wildcard.Double Compressed Stone.1739=Compressed Stone
+
+
+tag.wildcard.Block of Apple.1699=Custom Packed Blocks
+
