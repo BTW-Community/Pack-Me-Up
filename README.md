@@ -11,8 +11,6 @@ Always thought there wasn't enough packed block ? No ? ah... well... here it is 
 
 piston packer being used to compress blocks into their corresponding compressed forms.
 
-
-# Screenshots
 ![2025-02-22_20 24 52](https://github.com/user-attachments/assets/0fdb1174-b239-4df8-9378-cb3b5718a74c)
 
 # License
