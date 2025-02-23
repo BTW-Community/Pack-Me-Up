@@ -1,5 +1,5 @@
 # Pack Me Up !
-Always thought there wasn't enough packed block ? No ? ah... well... here it is anyway. 
+Always thought there wasn't enough packed block ? No ? oh well... here it is anyway. 
 
 "Pack Me Up !" is an addon from the mod "Better Than Wolves" 3.0CE
 
