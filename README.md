@@ -15,3 +15,4 @@ Piston packer being used to compress blocks into their corresponding compressed 
 
 # License
 This addon is under the CC-BY 4.0 license.
+(https://creativecommons.org/licenses/by/4.0/deed.en)
