@@ -1,4 +1,4 @@
-# Pack Me Up !
+# Pack Me Up ! (BtW 3.X Addon)
 <p align="center">
   <img src="pack_me_up_icon.png?raw=true" alt="Addon's banner" width="800"/>
 </p>
@@ -17,6 +17,9 @@ Piston packer being used to compress blocks into their corresponding compressed 
 
 ![2025-02-22_20 24 52](https://github.com/user-attachments/assets/0fdb1174-b239-4df8-9378-cb3b5718a74c)
 
-# License
+## Download
+
+
+## License
 This addon is under the CC-BY 4.0 license.
 (https://creativecommons.org/licenses/by/4.0/deed.en)
