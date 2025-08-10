@@ -1,4 +1,8 @@
 # Pack Me Up !
+<p align="center">
+  <img src="pack_me_up_icon.png?raw=true" alt="Addon's banner" width="800"/>
+</p>
+
 Always thought there wasn't enough packed block ? No ? oh well... here it is anyway. 
 
 "Pack Me Up !" is an addon from the mod "Better Than Wolves" 3.0CE
