@@ -18,7 +18,7 @@ Piston packer being used to compress blocks into their corresponding compressed 
 ![2025-02-22_20 24 52](https://github.com/user-attachments/assets/0fdb1174-b239-4df8-9378-cb3b5718a74c)
 
 ## Download
-
+https://github.com/BTW-Community/Pack-Me-Up/releases
 
 ## License
 This addon is under the CC-BY 4.0 license.
