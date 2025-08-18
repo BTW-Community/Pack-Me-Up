@@ -23,7 +23,3 @@ https://github.com/BTW-Community/Pack-Me-Up/issues
 
 ## Download
 https://github.com/BTW-Community/Pack-Me-Up/releases
-
-## License
-This addon is under the CC-BY 4.0 license.
-(https://creativecommons.org/licenses/by/4.0/deed.en)
