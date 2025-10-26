@@ -1,5 +1,6 @@
 package net.dravigen.pack_me_up.mixin;
 
+import net.dravigen.pack_me_up.PackMeUpAddon;
 import net.dravigen.pack_me_up.block.CompressedBlock;
 import net.dravigen.pack_me_up.block.CompressedLooseBlock;
 import net.minecraft.src.*;
@@ -9,6 +10,7 @@ import org.spongepowered.asm.mixin.Shadow;
 import org.spongepowered.asm.mixin.Unique;
 import org.spongepowered.asm.mixin.injection.At;
 import org.spongepowered.asm.mixin.injection.Inject;
+import org.spongepowered.asm.mixin.injection.Redirect;
 import org.spongepowered.asm.mixin.injection.callback.CallbackInfo;
 
 @Mixin(RenderBlocks.class)
@@ -57,6 +59,16 @@ public abstract class RenderBlocksOverlayMixin {
 	@Shadow private int uvRotateEast;
 	@Shadow private int uvRotateSouth;
 	
+	@Shadow public abstract void renderFaceYNeg(Block par1Block, double par2, double par4, double par6, Icon par8Icon);
+	
+	@Shadow public abstract void renderFaceZNeg(Block par1Block, double par2, double par4, double par6, Icon par8Icon);
+	
+	@Shadow public abstract void renderFaceXNeg(Block par1Block, double par2, double par4, double par6, Icon par8Icon);
+	
+	@Shadow public abstract void renderFaceYPos(Block par1Block, double par2, double par4, double par6, Icon par8Icon);
+	
+	@Shadow public abstract void renderFaceZPos(Block par1Block, double par2, double par4, double par6, Icon par8Icon);
+	
 	@Inject(method = "renderFaceXPos", at = @At("RETURN"))
 	private void renderCompressionOverlay_XPos(Block block, double x, double y, double z, Icon icon,
 			CallbackInfo ci) {
@@ -65,7 +77,7 @@ public abstract class RenderBlocksOverlayMixin {
 		}
 		Icon overlayIcon = getOverlayIcon(block, x, y, z);
 		
-		if (icon == overlayIcon) return;
+		if (isIconUnvalid(icon, overlayIcon)) return;
 		
 		commonStart();
 		
@@ -202,7 +214,7 @@ public abstract class RenderBlocksOverlayMixin {
 		
 		Icon overlayIcon = getOverlayIcon(block, x, y, z);
 		
-		if (icon == overlayIcon) return;
+		if (isIconUnvalid(icon, overlayIcon)) return;
 		
 		commonStart();
 		
@@ -339,7 +351,7 @@ public abstract class RenderBlocksOverlayMixin {
 		
 		Icon overlayIcon = getOverlayIcon(block, x, y, z);
 		
-		if (icon == overlayIcon) return;
+		if (isIconUnvalid(icon, overlayIcon)) return;
 		
 		commonStart();
 		
@@ -470,7 +482,7 @@ public abstract class RenderBlocksOverlayMixin {
 		
 		Icon overlayIcon = getOverlayIcon(block, x, y, z);
 		
-		if (icon == overlayIcon) return;
+		if (isIconUnvalid(icon, overlayIcon)) return;
 		
 		commonStart();
 		
@@ -601,7 +613,7 @@ public abstract class RenderBlocksOverlayMixin {
 		
 		Icon overlayIcon = getOverlayIcon(block, x, y, z);
 		
-		if (icon == overlayIcon) return;
+		if (isIconUnvalid(icon, overlayIcon)) return;
 		
 		commonStart();
 		
@@ -738,7 +750,7 @@ public abstract class RenderBlocksOverlayMixin {
 		
 		Icon overlayIcon = getOverlayIcon(block, x, y, z);
 		
-		if (icon == overlayIcon) return;
+		if (isIconUnvalid(icon, overlayIcon)) return;
 		
 		commonStart();
 		
@@ -866,7 +878,7 @@ public abstract class RenderBlocksOverlayMixin {
 	}
 	
 	
-	/*
+	
 	@Inject(method = "renderFullEastFace", at = @At("RETURN"), remap = false)
 	private void renderCompressionOverlay_East(Block block, double x, double y, double z, Icon icon,
 			CallbackInfo ci) {
@@ -876,13 +888,11 @@ public abstract class RenderBlocksOverlayMixin {
 		
 		Icon overlayIcon = getOverlayIcon(block, x, y, z);
 		
-		if (icon == overlayIcon) return;
+		if (isIconUnvalid(icon, overlayIcon)) return;
 		
 		commonStart();
 		
-		RenderBlocks renderer = (RenderBlocks)(Object)this;
-		
-		renderer.renderFullEastFace(block, x, y, z, overlayIcon);
+		renderFaceXPosCopy(block, x, y, z, overlayIcon);
 		
 		commonEnd();
 	}
@@ -895,13 +905,11 @@ public abstract class RenderBlocksOverlayMixin {
 		
 		Icon overlayIcon = getOverlayIcon(block, x, y, z);
 		
-		if (icon == overlayIcon) return;
+		if (isIconUnvalid(icon, overlayIcon)) return;
 		
 		commonStart();
 		
-		RenderBlocks renderer = (RenderBlocks)(Object)this;
-		
-		renderer.renderFullWestFace(block, x, y, z, overlayIcon);
+		renderFaceXNegCopy(block, x, y, z, overlayIcon);
 		
 		commonEnd();
 	}
@@ -914,13 +922,11 @@ public abstract class RenderBlocksOverlayMixin {
 		
 		Icon overlayIcon = getOverlayIcon(block, x, y, z);
 		
-		if (icon == overlayIcon) return;
+		if (isIconUnvalid(icon, overlayIcon)) return;
 		
 		commonStart();
 		
-		RenderBlocks renderer = (RenderBlocks)(Object)this;
-		
-		renderer.renderFullTopFace(block, x, y, z, overlayIcon);
+		renderFaceYPosCopy(block, x, y, z, overlayIcon);
 		
 		commonEnd();
 	}
@@ -933,13 +939,11 @@ public abstract class RenderBlocksOverlayMixin {
 		
 		Icon overlayIcon = getOverlayIcon(block, x, y, z);
 		
-		if (icon == overlayIcon) return;
+		if (isIconUnvalid(icon, overlayIcon)) return;
 		
 		commonStart();
 		
-		RenderBlocks renderer = (RenderBlocks)(Object)this;
-		
-		renderer.renderFullBottomFace(block, x, y, z, overlayIcon);
+		renderFaceYNegCopy(block, x, y, z, overlayIcon);
 		
 		commonEnd();
 	}
@@ -952,13 +956,11 @@ public abstract class RenderBlocksOverlayMixin {
 		
 		Icon overlayIcon = getOverlayIcon(block, x, y, z);
 		
-		if (icon == overlayIcon) return;
+		if (isIconUnvalid(icon, overlayIcon)) return;
 		
 		commonStart();
 		
-		RenderBlocks renderer = (RenderBlocks)(Object)this;
-		
-		renderer.renderFullSouthFace(block, x, y, z, overlayIcon);
+		renderFaceZPosCopy(block, x, y, z, overlayIcon);
 		
 		commonEnd();
 	}
@@ -971,27 +973,32 @@ public abstract class RenderBlocksOverlayMixin {
 		
 		Icon overlayIcon = getOverlayIcon(block, x, y, z);
 		
-		if (icon == overlayIcon) return;
+		if (isIconUnvalid(icon, overlayIcon)) return;
 		
 		commonStart();
 		
-		RenderBlocks renderer = (RenderBlocks)(Object)this;
-		
-		renderer.renderFullNorthFace(block, x, y, z, overlayIcon);
+		renderFaceZNegCopy(block, x, y, z, overlayIcon);
 		
 		commonEnd();
 	}
-	*/
+	
 	@Unique
 	private boolean isUnvalid(Block block) {
 		return blockAccess == null || !(block instanceof CompressedBlock) && !(block instanceof CompressedLooseBlock);
 	}
 	
 	@Unique
+	private static boolean isIconUnvalid(Icon icon, Icon overlayIcon) {
+		return icon == overlayIcon || icon == null || overlayIcon == null;
+	}
+	
+	@Unique
 	private Icon getOverlayIcon(Block block, double x, double y, double z) {
 		int level = blockAccess.getBlockMetadata(MathHelper.floor_double(x), MathHelper.floor_double(y), MathHelper.floor_double(z));
 		
-		return block instanceof CompressedBlock ? ((CompressedBlock) block).overlays[level] : ((CompressedLooseBlock) block).overlays[level];
+		if (blockAccess.getBlockId(MathHelper.floor_double(x), MathHelper.floor_double(y), MathHelper.floor_double(z)) != block.blockID || level > CompressedBlock.compressionLvl.length) return null;
+		
+		return block instanceof CompressedBlock ? ((CompressedBlock) block).overlays[level] : block instanceof CompressedLooseBlock ? ((CompressedLooseBlock) block).overlays[level] : null;
 	}
 	
 	@Unique
@@ -1006,4 +1013,63 @@ public abstract class RenderBlocksOverlayMixin {
 		GL11.glPopAttrib();
 	}
 	
+	
+	@Unique
+	int meta = 0;
+	@Inject(method = "renderStandardFallingBlock", at = @At("HEAD"))
+	private void getMetaFalling(Block block, int i, int j, int k, int iMetadata, CallbackInfo ci) {
+		meta = iMetadata;
+	}
+	
+	@Redirect(method = "renderStandardFallingBlock", at = @At(value = "INVOKE", target = "Lnet/minecraft/src/RenderBlocks;renderFaceYNeg(Lnet/minecraft/src/Block;DDDLnet/minecraft/src/Icon;)V"))
+	private void fallingYN(RenderBlocks instance, Block block, double i, double j, double k, Icon icon) {
+		if (block instanceof CompressedLooseBlock) setCustomColor(0.5f, 0.5f, 0.5f);
+		this.renderFaceYNegCopy(block, i, j, k, icon);
+	}
+	@Redirect(method = "renderStandardFallingBlock", at = @At(value = "INVOKE", target = "Lnet/minecraft/src/RenderBlocks;renderFaceYPos(Lnet/minecraft/src/Block;DDDLnet/minecraft/src/Icon;)V"))
+	private void fallingYP(RenderBlocks instance, Block block, double i, double j, double k, Icon icon) {
+		if (block instanceof CompressedLooseBlock) setCustomColor(1.0f, 1.0f, 1.0f);
+		this.renderFaceYPosCopy(block, i, j, k, icon);
+	}
+	@Redirect(method = "renderStandardFallingBlock", at = @At(value = "INVOKE", target = "Lnet/minecraft/src/RenderBlocks;renderFaceZNeg(Lnet/minecraft/src/Block;DDDLnet/minecraft/src/Icon;)V"))
+	private void fallingZN(RenderBlocks instance, Block block, double i, double j, double k, Icon icon) {
+		if (block instanceof CompressedLooseBlock) setCustomColor(0.8f, 0.8f, 0.8f);
+		this.renderFaceZNeg(block, i, j, k, icon);
+	}
+	@Redirect(method = "renderStandardFallingBlock", at = @At(value = "INVOKE", target = "Lnet/minecraft/src/RenderBlocks;renderFaceZPos(Lnet/minecraft/src/Block;DDDLnet/minecraft/src/Icon;)V"))
+	private void fallingZP(RenderBlocks instance, Block block, double i, double j, double k, Icon icon) {
+		if (block instanceof CompressedLooseBlock) setCustomColor(0.8f, 0.8f, 0.8f);
+		this.renderFaceZPosCopy(block, i, j, k, icon);
+	}
+	@Redirect(method = "renderStandardFallingBlock", at = @At(value = "INVOKE", target = "Lnet/minecraft/src/RenderBlocks;renderFaceXNeg(Lnet/minecraft/src/Block;DDDLnet/minecraft/src/Icon;)V"))
+	private void fallingXN(RenderBlocks instance, Block block, double i, double j, double k, Icon icon) {
+		if (block instanceof CompressedLooseBlock) setCustomColor(0.6f, 0.6f, 0.6f);
+		this.renderFaceXNegCopy(block, i, j, k, icon);
+	}
+	@Redirect(method = "renderStandardFallingBlock", at = @At(value = "INVOKE", target = "Lnet/minecraft/src/RenderBlocks;renderFaceXPos(Lnet/minecraft/src/Block;DDDLnet/minecraft/src/Icon;)V"))
+	private void fallingXP(RenderBlocks instance, Block block, double i, double j, double k, Icon icon) {
+		if (block instanceof CompressedLooseBlock) setCustomColor(0.6f, 0.6f, 0.6f);
+		this.renderFaceXPosCopy(block, i, j, k, icon);
+	}
+	
+	@Unique
+	private void setCustomColor(float i, float j, float k) {
+		Tessellator tess = Tessellator.instance;
+		
+		float shade = PackMeUpAddon.getColorMultiplier(meta);
+		
+		int baseColor = 0xFFFFFF;
+		
+		int r = (int) (((baseColor >> 16) & 0xFF) * shade);
+		int g = (int) (((baseColor >> 8) & 0xFF) * shade);
+		int b = (int) ((baseColor & 0xFF) * shade);
+		
+		int multiplier = (r << 16) | (g << 8) | b;
+		
+		float fRedMul = (float) (multiplier >> 16 & 0xFF) / 255.0f;
+		float fGreenMul = (float) (multiplier >> 8 & 0xFF) / 255.0f;
+		float fBlueMul = (float) (multiplier & 0xFF) / 255.0f;
+		
+		tess.setColorOpaque_F(fRedMul * i, fGreenMul * j, fBlueMul * k);
+	}
 }

@@ -8,7 +8,7 @@ import net.minecraft.src.*;
 import java.util.List;
 
 public class CompressedBlock extends Block {
-	private final String[] compressionLvl = new String[]{"1", "2", "3", "4", "5"};
+	public static final String[] compressionLvl = new String[]{"1", "2", "3", "4", "5"};
 	public int equivID;
 	public int equivMeta;
 	float speed;
@@ -79,6 +79,16 @@ public class CompressedBlock extends Block {
 	
 	public int damageDropped(int par1) {
 		return par1;
+	}
+	
+	@Override
+	public void onBlockDestroyedWithImproperTool(World world, EntityPlayer player, int i, int j, int k, int iMetadata) {
+		if (iMetadata > 0) {
+			this.dropItemsIndividually(world, i, j, k, this.blockID, 9, iMetadata - 1, 1);
+		}
+		else {
+			this.dropItemsIndividually(world, i, j, k, this.equivID, 9, this.equivMeta, 1);
+		}
 	}
 	
 	@Environment(EnvType.CLIENT)

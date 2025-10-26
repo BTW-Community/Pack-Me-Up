@@ -80,6 +80,16 @@ public class CompressedLooseBlock extends FallingFullBlock {
 		return par1;
 	}
 	
+	@Override
+	public void onBlockDestroyedWithImproperTool(World world, EntityPlayer player, int i, int j, int k, int iMetadata) {
+		if (iMetadata > 0) {
+			this.dropItemsIndividually(world, i, j, k, this.blockID, 9, iMetadata - 1, 1);
+		}
+		else {
+			this.dropItemsIndividually(world, i, j, k, this.equivID, 9, this.equivMeta, 1);
+		}
+	}
+	
 	@Environment(EnvType.CLIENT)
 	public int idPicked(World world, int i, int j, int k) {
 		return this.idDropped(world.getBlockMetadata(i, j, k), world.rand, 0);

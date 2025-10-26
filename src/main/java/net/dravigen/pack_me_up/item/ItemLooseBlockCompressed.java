@@ -35,4 +35,7 @@ public class ItemLooseBlockCompressed extends ItemBlockWithMetadata {
 	public String getItemDisplayName(ItemStack par1ItemStack) {
 		return getTranslatedName(par1ItemStack);
 	}
+	
+	
+	
 }

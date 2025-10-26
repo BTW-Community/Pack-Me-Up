@@ -84,7 +84,7 @@ public enum EnumCompressedBlock {
 	public float speed;
 	public boolean pistonShovelable;
 	public boolean breakSaw;
-	public final int toolLevel = 2;
+	public final int toolLevel = 3;
 	
 	
 	EnumCompressedBlock(int equivID, int equivMeta) {
