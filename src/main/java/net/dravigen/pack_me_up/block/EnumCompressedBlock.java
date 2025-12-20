@@ -1,6 +1,7 @@
 package net.dravigen.pack_me_up.block;
 
 import btw.BTWMod;
+import btw.block.BTWBlockIDs;
 import net.minecraft.src.Block;
 import net.minecraft.src.Material;
 import net.minecraft.src.StepSound;
@@ -12,24 +13,24 @@ public enum EnumCompressedBlock {
 	
 	NETHERRACK(87),
 	CLAY(1038),
-	ENDER(BTWMod.instance.parseID("fcAestheticOpaqueID"), 14, miscMaterial, 2, 10 * 2, false, true, true, soundStoneFootstep, 1.2f),
-	DUNG(BTWMod.instance.parseID("fcBlockAestheticOpaqueEarthID"), 7, Material.ground, 0.6f, 3 * 2, true, false, false, dirtStepSound, 0.8f),
-	FLINT(BTWMod.instance.parseID("fcAestheticOpaqueID"), 7, miscMaterial, 2, 10 * 2, false, true, true, soundStoneFootstep, 1.2f),
-	WHITESTONE(BTWMod.instance.parseID("fcAestheticOpaqueID"), 9, miscMaterial, 2, 10 * 2, false, true, true, stoneStepSound, 1.2f),
-	WHITECOBBLE(BTWMod.instance.parseID("fcAestheticOpaqueID"), 10, miscMaterial, 2, 10 * 2, false, true, true, stoneStepSound, 1.2f),
+	ENDER(BTWBlockIDs.AESTHETIC_OPAQUE_BLOCK_ID, 14, miscMaterial, 2, 10 * 2, false, true, true, soundStoneFootstep, 1.2f),
+	DUNG(BTWBlockIDs.AESTHETIC_OPAQUE_EARTH_BLOCK_ID, 7, Material.ground, 0.6f, 3 * 2, true, false, false, dirtStepSound, 0.8f),
+	FLINT(BTWBlockIDs.AESTHETIC_OPAQUE_BLOCK_ID, 7, miscMaterial, 2, 10 * 2, false, true, true, soundStoneFootstep, 1.2f),
+	WHITESTONE(BTWBlockIDs.AESTHETIC_OPAQUE_BLOCK_ID, 9, miscMaterial, 2, 10 * 2, false, true, true, stoneStepSound, 1.2f),
+	WHITECOBBLE(BTWBlockIDs.AESTHETIC_OPAQUE_BLOCK_ID, 10, miscMaterial, 2, 10 * 2, false, true, true, stoneStepSound, 1.2f),
 	DIRT( 3),
-	PACKED_DIRT(BTWMod.instance.parseID("fcBlockAestheticOpaqueEarthID"), 6, Material.ground, 0.6f, 3 * 2, true, false, false, dirtStepSound, 1.2f),
-	SPIDER(BTWMod.instance.parseID("fcBlockSpiderEyeID")),
-	BONE(BTWMod.instance.parseID("fcAestheticOpaqueID"), 15, miscMaterial, 2, 10 * 2, false, true, true, boneStepSound, 1.2f, true, false),
-	FLESH(BTWMod.instance.parseID("fcBlockRottenFleshID")),
+	PACKED_DIRT(BTWBlockIDs.AESTHETIC_OPAQUE_EARTH_BLOCK_ID, 6, Material.ground, 0.6f, 3 * 2, true, false, false, dirtStepSound, 1.2f),
+	SPIDER(BTWBlockIDs.SPIDER_EYE_BLOCK_ID),
+	BONE(BTWBlockIDs.AESTHETIC_OPAQUE_BLOCK_ID, 15, miscMaterial, 2, 10 * 2, false, true, true, boneStepSound, 1.2f, true, false),
+	FLESH(BTWBlockIDs.ROTTEN_FLESH_BLOCK_ID),
 	STONE2(1, 1, Material.rock, 3, 39 * 2, false, true, false, stoneStrata2StepSound, 1.2f),
 	STONE3(1, 2, Material.rock, 4.5f, 60 * 2, false, true, false, stoneStrata3StepSound, 1.2f),
-	LOOSECOBBLE1(BTWMod.instance.parseID("fcBlockCobblestoneLooseID"), 0, Material.rock, 1, 15 * 2, false, true, false, cobblestoneStepSound, 1.2f),
-	LOOSECOBBLE2(BTWMod.instance.parseID("fcBlockCobblestoneLooseID"), 4, Material.rock, 1, 15 * 2, false, true, false, cobblestoneStrata2StepSound, 1.2f),
-	LOOSECOBBLE3(BTWMod.instance.parseID("fcBlockCobblestoneLooseID"), 8, Material.rock, 1, 15 * 2, false, true, false, cobblestoneStrata3StepSound, 1.2f),
-	SOAP(BTWMod.instance.parseID("fcAestheticOpaqueID"), 5, miscMaterial, 2, 10 * 2, false, true, true, soundStoneFootstep, 1.2f, false, false),
+	LOOSECOBBLE1(BTWBlockIDs.COBBLESTONE_LOOSE_BLOCK_ID, 0, Material.rock, 1, 15 * 2, false, true, false, cobblestoneStepSound, 1.2f),
+	LOOSECOBBLE2(BTWBlockIDs.COBBLESTONE_LOOSE_BLOCK_ID, 4, Material.rock, 1, 15 * 2, false, true, false, cobblestoneStrata2StepSound, 1.2f),
+	LOOSECOBBLE3(BTWBlockIDs.COBBLESTONE_LOOSE_BLOCK_ID, 8, Material.rock, 1, 15 * 2, false, true, false, cobblestoneStrata3StepSound, 1.2f),
+	SOAP(BTWBlockIDs.AESTHETIC_OPAQUE_BLOCK_ID, 5, miscMaterial, 2, 10 * 2, false, true, true, soundStoneFootstep, 1.2f, false, false),
 	SAND(12),
-	OYSTER(BTWMod.instance.parseID("fcBlockCreeperOystersID")),
+	OYSTER(BTWBlockIDs.CREEPER_OYSTERS_BLOCK_ID),
 	GRAVEL(13, 0),
 	APPLE(1699, 0, miscMaterial, 0.8f, 3 * 2, true, false, true, cropStepSound, 1, true, false),
 	CARROT(1699, 1, miscMaterial, 0.8f, 3 * 2, true, false, true, cropStepSound, 1, true, false),
@@ -40,7 +41,7 @@ public enum EnumCompressedBlock {
 	SANDSTONE_NORMAL(24, 0),
 	SANDSTONE_SMOOTH(24, 1),
 	SANDSTONE_CARVED(24, 2),
-	PUMPKIN(BTWMod.instance.parseID("fcBlockPumpkinFreshID"), 0),
+	PUMPKIN(BTWBlockIDs.PUMPKIN_FRESH_BLOCK_ID, 0),
 	HAY(170),
 	VENOM(1699, 5, miscMaterial, 0.8f, 3 * 2, true, false, true, cropStepSound, 1, true, false),
 	BAT(1699, 6, miscMaterial, 0.8f, 3 * 2, true, false, true, cropStepSound, 1, true, false),
@@ -55,7 +56,7 @@ public enum EnumCompressedBlock {
 	SPRUCE_LOG(17, 1),
 	BIRCH_LOG(17, 2),
 	JUNGLE_LOG(17, 3),
-	BLOOD_LOG(BTWMod.instance.parseID("fcBloodWoodID")),
+	BLOOD_LOG(BTWBlockIDs.BLOOD_WOOD_BLOCK_ID),
 	OAK_PLANK(5),
 	SPRUCE_PLANK(5, 1),
 	BIRCH_PLANK(5, 2),
@@ -68,9 +69,9 @@ public enum EnumCompressedBlock {
 	DIAMOND(57),
 	EMERALD(133),
 	COAL(173),
-	DIAMOND_INGOT(BTWMod.instance.parseID("fcBlockDiamondIngotID")),
-	SFS(BTWMod.instance.parseID("fcSoulforgedSteelBlockID")),
-	ROPE(BTWMod.instance.parseID("fcAestheticOpaqueID"), 6, miscMaterial, 2, 10 * 2, false, true, true, soundStoneFootstep, 1.2f);
+	DIAMOND_INGOT(BTWBlockIDs.DIAMOND_INGOT_BLOCK_ID),
+	SFS(BTWBlockIDs.SOULFORGED_STEEL_BLOCK_BLOCK_ID),
+	ROPE(BTWBlockIDs.AESTHETIC_OPAQUE_BLOCK_ID, 6, miscMaterial, 2, 10 * 2, false, true, true, soundStoneFootstep, 1.2f);
 	
 	public final int equivID;
 	public final int equivMeta;

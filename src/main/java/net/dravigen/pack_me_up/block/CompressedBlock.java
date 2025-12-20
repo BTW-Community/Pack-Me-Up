@@ -1,6 +1,7 @@
 package net.dravigen.pack_me_up.block;
 
 import btw.BTWMod;
+import btw.block.BTWBlockIDs;
 import net.fabricmc.api.EnvType;
 import net.fabricmc.api.Environment;
 import net.minecraft.src.*;
@@ -106,7 +107,7 @@ public class CompressedBlock extends Block {
 		}
 		
 		for (int j = 0; j < 6; j++) {
-			if (equivID == BTWMod.instance.parseID("fcBlockSpiderEyeID")) {
+			if (equivID == BTWBlockIDs.SPIDER_EYE_BLOCK_ID) {
 				this.blockIcons[j] = iconRegister.registerIcon("btw:spider_eye_block");
 			}
 			else {

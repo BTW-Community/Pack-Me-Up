@@ -146,18 +146,18 @@ public class CustomPackedBlock extends Block {
 	}
 	
 	@Override
-	public StepSound getStepSound(World world, int i, int j, int k) {
-		int metadata = world.getBlockMetadata(i, j, k);
-		if (metadata == SUBTYPE_NITRE || metadata == SUBTYPE_SOUL_FLUX) {
+	protected StepSound getStepSoundInternal(World world, int meta) {
+		if (meta == SUBTYPE_NITRE || meta == SUBTYPE_SOUL_FLUX) {
 			return soundSandFootstep;
 		}
-		if (metadata == SUBTYPE_BRIMSTONE) {
+		if (meta == SUBTYPE_BRIMSTONE) {
 			return soundStoneFootstep;
 		}
-		if (metadata == SUBTYPE_SLIME) {
+		if (meta == SUBTYPE_SLIME) {
 			return BTWBlocks.clayStepSound;
 		}
-		return super.getStepSound(world, i, j, k);
+		
+		return super.getStepSoundInternal(world, meta);
 	}
 	
 	public boolean doesBlockBreakSaw(World world, int i, int j, int k) {

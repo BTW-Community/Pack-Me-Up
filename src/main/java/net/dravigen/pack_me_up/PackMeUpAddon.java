@@ -1,7 +1,7 @@
 package net.dravigen.pack_me_up;
 
-import btw.AddonHandler;
-import btw.BTWAddon;
+import api.AddonHandler;
+import api.BTWAddon;
 
 public class PackMeUpAddon extends BTWAddon {
 	public PackMeUpAddon() {
